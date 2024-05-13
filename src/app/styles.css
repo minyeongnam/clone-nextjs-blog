@@ -3,10 +3,10 @@
 }
 
 .header {
-  @apply flex justify-between px-5 py-5;
+  @apply flex justify-between p-5;
 }
 .header h1 {
-  @apply text-2xl font-bold;
+  @apply text-3xl font-bold;
 }
 
 .container {
@@ -26,4 +26,61 @@
 
 .profile img {
   @apply mx-auto mb-2 rounded-full w-32 h-32 bg-gray-200;
+}
+
+.featured-posts h2 {
+  @apply text-2xl font-bold;
+}
+
+.posts-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4;
+}
+
+.post-card {
+  @apply rounded-md overflow-hidden shadow-lg;
+}
+
+.post-card_image {
+  @apply w-full;
+}
+
+.post-card_info {
+  @apply flex flex-col items-center p-4;
+}
+
+.post-card_info time {
+  @apply self-end text-xs mb-2;
+}
+
+.post-card_info h3 {
+  @apply text-lg font-bold;
+}
+
+.post-card_info p {
+  @apply w-full truncate mt-2 text-center text-sm;
+}
+
+.post-card_info span {
+  @apply text-xs rounded-lg bg-gray-100 px-4 py-1 mt-2;
+}
+
+.multi-carousel {
+  @apply mx-2;
+}
+
+.filterable-posts {
+  @apply flex gap-5 py-5;
+}
+
+.categories h2 {
+  @apply text-lg font-bold border-b border-sky-500;
+}
+.categories ul {
+  @apply mt-2;
+}
+.categories li {
+  @apply hover:text-sky-500 cursor-pointer;
+}
+.categories li.active {
+  @apply text-sky-500;
 }
