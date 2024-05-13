@@ -84,3 +84,26 @@
 .categories li.active {
   @apply text-sky-500;
 }
+
+.markdown-viewer {
+  @apply prose lg:prose-base;
+}
+
+.post {
+  @apply rounded-lg overflow-hidden;
+}
+.post__image {
+  @apply w-full;
+}
+.post__info {
+  @apply flex flex-col p-5;
+}
+.post__title {
+  @apply text-3xl font-bold;
+}
+.post__date {
+  @apply self-end flex items-center gap-2;
+}
+.post__description {
+  @apply text-base border-b-2 pb-5 mb-2;
+}

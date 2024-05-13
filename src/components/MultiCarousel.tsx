@@ -25,6 +25,11 @@ const responsive = {
 interface Props {
   children: React.ReactNode;
 }
+
+/**
+ * 라이브러리 사용시 직접적으로 사용하지 않고 컴포넌트로 한단계 추상화해주면 내부적으로 다른 라이브러리로 교체시 앱 자체에는 별도의 영향을 끼치지않는다.
+ */
+
 export default function MultiCarousel({ children }: Props) {
   return (
     <Carousel
