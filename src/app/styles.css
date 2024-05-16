@@ -86,7 +86,7 @@
 }
 
 .markdown-viewer {
-  @apply prose lg:prose-base;
+  @apply prose lg:prose-base max-w-none;
 }
 
 .post {
@@ -106,4 +106,7 @@
 }
 .post__description {
   @apply text-base border-b-2 pb-5 mb-2;
+}
+.markdown-viewer_image {
+  @apply w-full max-h-60 object-cover;
 }
