@@ -9,6 +9,7 @@ export type Post = {
   category: string;
   path: string;
   featured: boolean;
+  content: string;
 };
 export async function getAllposts(): Promise<Post[]> {
   const filePath = path.join(process.cwd(), "data", "posts.json");
